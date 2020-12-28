@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import StudentSignup from './signup/student-signup'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StudentSignup />
   </React.StrictMode>,
   document.getElementById('root')
 );
