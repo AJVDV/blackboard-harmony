@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Nav from '../nav';
+import Content from '../content/content';
 
 class TeacherSignup extends Component {
     render () {
         return(
-            <div className="teacher_form">
+            <Content className="teacher_form">
+                <h2>Teachers Sign Up Here!</h2>
                 <label htmlFor="first_name">First Name:</label>
                 <input 
                     type="text"
@@ -28,7 +29,7 @@ class TeacherSignup extends Component {
                     type="text"
                     name="username"
                     id="username"
-                    placeholder="Preffered nickname or handle"
+                    placeholder="Nickname or Handle"
                     //value={this.state.last_name}
                     //onChange={e => this.lastNameChanged(e.target.value)}
                 />
@@ -41,7 +42,25 @@ class TeacherSignup extends Component {
                     //value={this.state.email}
                     //onChange={e => this.emailChanged(e.target.value)}
                 />
-            </div>
+                <label htmlFor="password">Password</label>
+                <input
+                    type="text"
+                    name="password"
+                    id="password"
+                    placeholder="Your Password Here"
+                    //value={this.state.password}
+                    //onChange={e => this.passwordChanged(e.target.value)}
+                />
+                <label htmlFor="confirm_password">Confirm Password</label>
+                <input 
+                    type="text"
+                    name="confirm_password"
+                    id="confirm_password"
+                    placeholder="Confirm Password Here"
+                    //value={this.state.confirmPassword}
+                    //onChange={e => this.confirmPasswordChanged(e.target.value)}
+                />
+            </Content>
         )
     }
 }

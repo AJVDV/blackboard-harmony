@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
+//import ClassMain from './class/classMain'
 import reportWebVitals from './reportWebVitals';
-import StudentSignup from './signup/student-signup'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <StudentSignup />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
